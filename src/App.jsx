@@ -2,6 +2,7 @@ import styles from "./App.module.css";
 import { Hero } from "./components/Hero/Hero.jsx";
 import { Navbar } from "./components/Navbar/Navbar.jsx";
 import { Contact } from "./components/Contact/Contact.jsx";
+import { Footer } from "./components/Footer/Footer.jsx";
 import { Route, Routes } from "react-router-dom";
 
 
@@ -14,6 +15,7 @@ function App() {
           <Route index element={<Hero/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
+        <Footer/>
       </div>
   )
 }
