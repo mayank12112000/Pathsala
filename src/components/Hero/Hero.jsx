@@ -1,7 +1,6 @@
 import React from "react";
 
 import styles from "./Hero.module.css";
-import { getImageUrl } from "../../utils.js";
 import { NavLink } from "react-router-dom";
 export const Hero = () => {
   return (
@@ -9,7 +8,7 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Learn, Grow, Rise</h1>
         <p className={styles.description}>
-          Knowledge should never be a priveldge, but a right!
+         <strong>Knowledge should never be a priveldge, but a right!</strong>
         </p>
         <div>
           <NavLink to="/course" className={styles.contactBtn}>

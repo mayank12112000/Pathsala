@@ -5,10 +5,10 @@ import { NavLink } from "react-router-dom";
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className={"pt-3 "+styles.navbar}>
-      <a className="" href="/">
+    <nav className={"pt-3 "+ styles.navbar}>
+      <NavLink className="" to="/">
         <img className={styles.navLogo} src="logo/logo.png" alt="" />
-      </a>
+      </NavLink>
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}
@@ -25,16 +25,16 @@ export const Navbar = () => {
           onClick={() => setMenuOpen(false)}
         >
           <li>
-            <NavLink to="/courses" >Courses</NavLink>
+            <NavLink to="/courses" ><strong> Courses</strong></NavLink>
           </li>
           <li>
-            <NavLink to="/ask-doubt">Ask doubt</NavLink>
+            <NavLink to="/ask-doubt"><strong> Ask doubt</strong></NavLink>
           </li>
           <li>
-            <NavLink>Study material</NavLink>
+            <NavLink to="study-material"><strong> Study material</strong></NavLink>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <NavLink to="/contact"><strong> Contact</strong></NavLink>
           </li>
         </ul>
       </div>

@@ -8,7 +8,7 @@
   margin: 0 5%;
 }
 .navLogo{
-  height: 3rem;
+  height: 2.75rem;
 }
 .title {
   font-size: 30px;
@@ -28,12 +28,12 @@
 
 .menuItems {
   display: flex;
-  gap: 47px;
+  gap: 2rem;
   list-style: none;
 }
 
 .menuItems a {
-  font-size: 25px;
+  font-size: 1.3rem;
   color: var(--color-text);
   text-decoration: none;
 }
