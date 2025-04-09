@@ -10,20 +10,11 @@ export const Navbar = () => {
         <img className={styles.navLogo} src="logo/logo.png" alt="" />
       </NavLink>
       <div className={styles.menu}>
-        <img
-          className={styles.menuBtn}
-          src={
-            menuOpen
-              ?  "../../../assets/nav/closeIcon.png"
-              :  "../../../assets/nav/menuIcon.png"
-          }
-          alt="menu-button"
+        <img className={styles.menuBtn}
+          src={menuOpen ?  "../../../assets/nav/closeIcon.png" :  "../../../assets/nav/menuIcon.png"} alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
         />
-        <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
-          onClick={() => setMenuOpen(false)}
-        >
+        <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`} onClick={() => setMenuOpen(false)}>
           <li>
             <NavLink to="/courses" ><strong> Courses</strong></NavLink>
           </li>
