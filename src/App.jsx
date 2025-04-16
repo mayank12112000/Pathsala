@@ -14,7 +14,6 @@ function App() {
     return (
       <div className={styles.App}>
         <Navbar />
-        <Carousel/>
         <div className="my-5">
 
         <Routes>
