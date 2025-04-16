@@ -4,6 +4,8 @@
     text-align: center;
     margin-top: 50px;
     font-family: Arial, sans-serif;
+      min-height: calc(100vh - 280px);
+
 }
 
 .not-found h1 {

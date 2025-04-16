@@ -1,8 +1,8 @@
 @import "../../vars.css";
 
 .container {
-  color: var(--color-text);
-  margin-top: 120px;
+  color: white;
+  /* margin-top: 120px; */
   background-color: var(--color-secondary);
   display: flex;
   flex-direction: row;
@@ -10,6 +10,7 @@
   width: 100vw;
   padding: 58px 10%;
   gap: 10px;
+  min-height: calc(100vh - 200px);
 }
 
 .text h2 {
@@ -39,17 +40,23 @@
 }
 
 .link a {
-  color: var(--color-text);
+  color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 1.5px;
+}
+.link a:hover {
+  color: #cd9d9d;
+  transition: all 0.3s ease-in-out;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
     gap: 23px;
+    padding: 0;
   }
 
   .text {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Courses.css";
-import { NavLink } from "react-router-dom";
+import { Card } from "../Card";
 
 export const Courses = () => {
   const courses = [
@@ -21,20 +21,7 @@ export const Courses = () => {
       <h2 className="courses-title">Our Courses</h2>
       <div className="courses-list">
         {courses.map((course) => (
-            <div key={course.id} className="card course-card" style={{width: "18rem"}}>
-              <img src="carousel/image1.png" className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">{course.title}</h5>
-                <p className="card-text">
-                  {course.description}
-                </p>
-                <NavLink to={`/courses/${course.id}`} className="btn btn-primary">
-                <button className="btn btn-primary">
-                  Explore
-                </button>
-                </NavLink>
-              </div>
-          </div>
+            <Card title={course.title} description={course.description} id={course.id} navigation={`/courses/${course.id}`}/>
         ))}
       </div>
     </div>
