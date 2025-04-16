@@ -10,6 +10,7 @@ export const Hero = () => {
         <p className={styles.description}>
          <strong>Knowledge should never be a priveldge, but a right!</strong>
         </p>
+        
         <div>
           <NavLink to="/course" className={styles.contactBtn}>
             Explore Courses

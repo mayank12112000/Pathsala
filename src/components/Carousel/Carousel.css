@@ -1,0 +1,22 @@
+/* Carousel.css */
+.carousel-inner img {
+    object-fit: fill;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    opacity: 1;
+    transform: scale(1.2);
+}
+.carousel-control-prev i,
+.carousel-control-next i {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+}
+
+.carousel {
+    /* max-width: 800px; */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
