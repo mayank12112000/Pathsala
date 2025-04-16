@@ -7,6 +7,7 @@ import { NotFound } from "./components/NotFound/NotFound.jsx";
 import { Carousel} from "./components/Carousel/Carousel.jsx";
 import { Courses} from "./components/Courses/Courses.jsx";
 import { Route, Routes } from "react-router-dom";
+import NotificationModal from "./components/NotifcationModal/NotifcationModal.jsx";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     return (
       <div className={styles.App}>
         <Navbar />
+        <NotificationModal/>
         <div className="my-5">
 
         <Routes>
